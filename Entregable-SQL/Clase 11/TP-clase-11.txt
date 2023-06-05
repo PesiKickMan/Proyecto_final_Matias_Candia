@@ -1,0 +1,37 @@
+update producto
+set
+	Costo = 1700
+where 
+	Descripciones like 'Pantuflas'
+
+delete from productoVendido
+where
+	Stock = 2
+
+update USUARIO
+set
+	Contraseña = 'NoSoyTobias'
+where
+	NombreUsuario like 'tcasazza'
+
+delete from USUARIO
+where
+	Apellido = 'Perez'
+
+update producto
+set
+	Stock = 0
+where
+	Descripciones = 'Buzo'
+
+delete from producto
+where
+	Descripciones = 'Musculosa'
+
+SELECT
+		USUARIO.NombreUsuario ,
+		producto.Descripciones
+FROM
+		USUARIO
+inner join producto
+	on USUARIO.Id = producto.IdUsuario

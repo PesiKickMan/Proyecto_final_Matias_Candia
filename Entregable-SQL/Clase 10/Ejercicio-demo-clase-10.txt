@@ -1,0 +1,25 @@
+INSERT INTO	USUARIO
+			(
+			Nombre ,
+			Apellido ,
+			NombreUsuario ,
+			Contraseña ,
+			Mail )
+
+VALUES 
+		(
+		 'Juan' ,
+		 'Perez' ,
+		 'JPerez' ,
+		 'SoyJuanPerez' ,
+		 'JuanPerez@gmail.com' )
+
+SELECT
+		Id ,
+		Nombre ,
+		Apellido ,
+		NombreUsuario ,
+		Contraseña ,
+		Mail
+FROM
+		USUARIO

@@ -1,0 +1,88 @@
+SELECT
+		Id ,
+		Nombre ,
+		Apellido ,
+		NombreUsuario ,
+		Contraseña ,
+		Mail
+FROM
+		USUARIO
+WHERE
+		NombreUsuario like 'tcasazza'
+
+SELECT
+		Id ,
+		Nombre ,
+		Apellido ,
+		NombreUsuario ,
+		Contraseña ,
+		Mail
+FROM
+		USUARIO
+WHERE
+		NombreUsuario like 'eperez' AND contraseña like 'SoyErnestoPerez'
+
+SELECT
+		Id ,
+		Nombre ,
+		Apellido ,
+		NombreUsuario ,
+		Contraseña ,
+		Mail
+FROM
+		USUARIO
+WHERE
+		NombreUsuario like 'JPerez' AND contraseña like '123'
+
+SELECT
+		Descripciones
+from
+		producto
+where
+		Idusuario = 1
+
+INSERT INTO	USUARIO
+			(
+			Nombre ,
+			Apellido ,
+			NombreUsuario ,
+			Contraseña ,
+			Mail )
+
+VALUES 
+		(
+		 'Matias' ,
+		 'Candia' ,
+		 'mcandia' ,
+		 'Soymcandia' ,
+		 'mcandia@gmail.com' )
+
+SELECT
+		Id ,
+		Nombre ,
+		Apellido ,
+		NombreUsuario ,
+		Contraseña ,
+		Mail
+FROM
+		USUARIO
+WHERE
+		NombreUsuario like 'mcandia'
+
+insert into Producto 
+					( Descripciones ,
+					  Costo ,
+					  PrecioVenta ,
+					  Stock ,
+					  IdUsuario )
+values
+					( 'Pantuflas' ,
+					   300 ,
+					   500 ,
+					   27 ,
+					   1 )
+
+SELECT
+		Descripciones
+from
+		producto
