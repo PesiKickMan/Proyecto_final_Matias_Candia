@@ -1,0 +1,80 @@
+select
+	ProductoVendido.Id ,
+	ProductoVendido.Stock ,
+	ProductoVendido.IdProducto ,
+	ProductoVendido.IdVenta ,
+	producto.Descripciones
+from ProductoVendido
+inner join producto
+on ProductoVendido.IdProducto = producto.Id
+
+SET IDENTITY_INSERT Producto ON 
+
+insert into Producto 
+					( Id ,
+					  Descripciones ,
+					  Costo ,
+					  PrecioVenta ,
+					  Stock ,
+					  IdUsuario )
+values
+					(  10 ,
+					  'Harina' ,
+					   300 ,
+					   10001 ,
+					   27 ,
+					   1 )
+
+SET IDENTITY_INSERT Producto OFF
+
+SET IDENTITY_INSERT ProductoVendido ON
+
+insert into ProductoVendido 
+					( Id ,
+					  Stock ,
+					  IdProducto ,
+					  IdVenta )
+values
+					(  8 ,
+					   27 ,
+					   10 ,
+					   1 )
+
+SET IDENTITY_INSERT ProductoVendido OFF
+
+
+select
+	ProductoVendido.Id ,
+	ProductoVendido.Stock ,
+	ProductoVendido.IdProducto ,
+	ProductoVendido.IdVenta ,
+	producto.Descripciones
+from ProductoVendido
+inner join producto
+on ProductoVendido.IdProducto = producto.Id and producto.PrecioVenta > 10000
+where producto.Descripciones like '%ina'
+
+
+insert into Producto 
+					( Descripciones ,
+					  Costo ,
+					  PrecioVenta ,
+					  Stock ,
+					  IdUsuario )
+values
+					( 'Aceite de Girasol Cocinera' ,
+					   350 ,
+					   500 ,
+					   0 ,
+					   1 )
+
+
+
+insert into ProductoVendido 
+					( Stock ,
+					  IdProducto ,
+					  IdVenta )
+values
+					(  20 ,
+					   15 ,
+					   1 )
