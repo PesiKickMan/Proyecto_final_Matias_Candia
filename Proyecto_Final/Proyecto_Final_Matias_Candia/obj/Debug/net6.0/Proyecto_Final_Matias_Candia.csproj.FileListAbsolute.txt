@@ -1,5 +1,0 @@
-E:\Cursos\Coderhouse-C#\Proyecto_Final\Proyecto_Final_Matias_Candia\obj\Debug\net6.0\Proyecto_Final_Matias_Candia.csproj.AssemblyReference.cache
-E:\Cursos\Coderhouse-C#\Proyecto_Final\Proyecto_Final_Matias_Candia\obj\Debug\net6.0\Proyecto_Final_Matias_Candia.GeneratedMSBuildEditorConfig.editorconfig
-E:\Cursos\Coderhouse-C#\Proyecto_Final\Proyecto_Final_Matias_Candia\obj\Debug\net6.0\Proyecto_Final_Matias_Candia.AssemblyInfoInputs.cache
-E:\Cursos\Coderhouse-C#\Proyecto_Final\Proyecto_Final_Matias_Candia\obj\Debug\net6.0\Proyecto_Final_Matias_Candia.AssemblyInfo.cs
-E:\Cursos\Coderhouse-C#\Proyecto_Final\Proyecto_Final_Matias_Candia\obj\Debug\net6.0\Proyecto_Final_Matias_Candia.csproj.CoreCompileInputs.cache
